@@ -1,5 +1,5 @@
 import java.util.*;
-/* 
+
 class Hello{
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
@@ -156,7 +156,7 @@ class Main{
         default: System.out.println("Invalid Button");
     }
     }
-}*/
+}
 
 class Calculator{
     public static void main(String[] args){
@@ -187,6 +187,32 @@ class Calculator{
             default:
             System.out.println("Wrong Operator");
             
+        }
+    }
+}
+
+class Main{
+    public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the no: ");
+    int no=sc.nextInt();
+    int sum=0;
+    for (int i=1;i<=no;i++){
+        sum=sum+i;
+    }
+    System.out.println("Sum of the given number is: "+sum);
+    }
+}
+
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the table you want :");
+        int table=sc.nextInt();
+        System.out.println("Enter till where you want the table:");
+        int till=sc.nextInt();
+        for (int i=1; i<=till; i++){
+            System.out.println(table+" x "+i+" = "+table*i);
         }
     }
 }
