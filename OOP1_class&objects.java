@@ -1,5 +1,5 @@
 // Class is an blueprint to create objects (eg. Rules set to create Car). 
-// Class is like an logical construct that doesn't exist in real world, but through which we can create objects
+// Class is like an logical entity that doesn't exist in real world, but through which we can create objects
 // Class contains of properties & functions
 // Only one class can be public and that is main_class so we cant make other classes public
   class Car{
@@ -8,8 +8,8 @@
       System.out.println(name+"Can run fast")
   }
 // Objects are instance of an class (eg. Car/Components of the car). 
-// Object is like an physical reality ie it occupies space in memory 
-public class Mainclass {
+// Object is like an physical entity ie it occupies space in memory 
+public class MainClass {
     public static void main(String[] args) {
       Car c1=new Car();
       c1.name="Urus";
@@ -22,4 +22,6 @@ public class Mainclass {
       c2.can_run();
     }
 }
-    
+
+// class - blueprint of an flat, can create multiple flats from a blueprint
+// object - actual flat that is created with the help of that blueprint
