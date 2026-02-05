@@ -17,5 +17,4 @@ public class Mainclass {
   }
 }
 
-// Method Overriding : When child has same properties as their parents then the child overrides the parent 
-// meaning instead of getting parents property, child uses its own property
+
