@@ -15,3 +15,10 @@ class Animal{
 // Types : default, private, protected, public
 
 // Encapsulation : it means bundling of fields and methods inside a single class. It prevent outer classes from accessing and changing the fileds and methods of a class. It also helps in data hiding
+
+// static keyword : static means belongs to the class, not to the object. We can use it without creating object. 
+// eg. Normally, variables and methods need an object:
+MyClass obj = new MyClass();
+obj.method();       
+// But static members can be accessed like this:
+MyClass.method(); //no object needed
