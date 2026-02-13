@@ -39,3 +39,17 @@ innterface SuperInterface{
     //abstract method
     int calculate(int val);
   }
+eg)
+  public class Mainclass {
+  public static void main(String[] args) {
+    Walke wa = (int steps)->{
+      System.out.println(steps);
+      return steps;
+    };
+    wa.walk(5);
+  }
+}
+
+interface Walke {
+  int walk(int steps);
+}
