@@ -1,4 +1,4 @@
-// Exceptions : 
+// Exceptions : It is an event that disrupts normal flow of program. Its an object thats thrown at runtime
 // Errors
 // 1) Compile time error
 // 2) Runtime error (Exceptions) - we need to handle these exceptions
@@ -24,5 +24,41 @@ public class ExceptionHandling {
         }
         System.out.println(j);
         System.out.println("Bye");
+    }
+}
+
+// throws : It tells that the method is throwing an exception so that we need to handle the exception
+public class Animal {
+    public static void main() {
+        Animal a=new Animal();
+        a.hii();
+    }
+    public static void hii(){
+        try {
+            hello();
+        }catch (Exception e){
+            System.out.println("Cant print out of index");
+        }
+    }
+    public static void hello() throws ArrayIndexOutOfBoundsException {
+        Integer arr[]=new Integer[5];
+        arr[5]=10;
+    }
+}
+
+// finally : prints anyway
+class Animal{
+    public static void main(String[] args) {
+        System.out.println(hello(10,0));
+    }
+
+    public static int hello(int a,int b) {
+        try {
+            return a / b;
+        }catch (Exception e){
+            return -1;
+        }finally {
+            System.out.println("cant divide by zero");
+        }
     }
 }
