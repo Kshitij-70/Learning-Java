@@ -15,7 +15,18 @@ class Animal{
 // Types : default, private, protected, public
 
 // Encapsulation : it means bundling of fields and methods inside a single class. It prevent outer classes from accessing and changing the fileds and methods of a class. It also helps in data hiding
+//                 encapsulation is achieved by using private variables and public getter and setter methods.
+class Student {
+    private int age;   // data hiding
 
+    public int getAge() {      // getter
+        return age;
+    }
+
+    public void setAge(int age) {   // setter
+        this.age = age;
+    }
+}
 // static keyword : static means belongs to the class, not to the object. We can use it without creating object. 
 // eg. Normally, variables and methods need an object:
 MyClass obj = new MyClass();
